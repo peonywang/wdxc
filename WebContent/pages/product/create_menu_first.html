@@ -9,6 +9,7 @@
     <script src="/js/jquery-3.4.0.min.js"></script>
     <link rel="stylesheet" href="/css/com.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!--时间插件-->
 </head>
 <body>
 <!-- 头部 -->
@@ -23,7 +24,7 @@
         <!-- 展示区 -->
         <div class="content">
             <!-- 筛选 -->
-            <ul class="filter filter2">
+            <ul class="filter filter2>
                 <li>
                     <span class="lab">用户ID</span>
                     <input type="text" class="inp">
@@ -32,15 +33,15 @@
                 </li>
                 <li>
                     <span class="lab">下单时间</span>
-                    <input type="text" class="inp" placeholder="开始时间">
+                    <input type="text" class="inp Wdate" id="orderT_0" placeholder="开始时间" onclick="WdatePicker({maxDate:'#F{$dp.$D(\'orderT_1\')}'})"/>
                     <span class="lab">至</span>
-                    <input type="text" class="inp" placeholder="结束时间">
+                    <input type="text" class="inp Wdate" id="orderT_1" placeholder="结束时间" onclick="WdatePicker({minDate:'#F{$dp.$D(\'orderT_0\')}'})"/>
                 </li>
                 <li>
                     <span class="lab">支付时间</span>
-                    <input type="text" class="inp" placeholder="开始时间">
+                    <input type="text" class="inp Wdate" id="payT_0" placeholder="开始时间" onclick="WdatePicker({maxDate:'#F{$dp.$D(\'payT_1\')}'})"/>
                     <span class="lab">至</span>
-                    <input type="text" class="inp" placeholder="结束时间">
+                    <input type="text" class="inp Wdate" id="payT_1" placeholder="结束时间" onclick="WdatePicker({minDate:'#F{$dp.$D(\'payT_0\')}'})"/>
                 </li>
                 <li class="flex1">
                     <span class="lab">订单状态</span>
