@@ -24,78 +24,83 @@
         <!-- 展示区 -->
         <div class="content">
             <!-- 筛选 -->
-            <ul class="filter filter2>
-                <li>
-                    <span class="lab">用户ID</span>
-                    <input type="text" class="inp">
-                    <span class="lab">手机号</span>
-                    <input type="text" class="inp">
-                </li>
-                <li>
-                    <span class="lab">下单时间</span>
-                    <input type="text" class="inp Wdate" id="orderT_0" placeholder="开始时间" onclick="WdatePicker({maxDate:'#F{$dp.$D(\'orderT_1\')}'})"/>
-                    <span class="lab">至</span>
-                    <input type="text" class="inp Wdate" id="orderT_1" placeholder="结束时间" onclick="WdatePicker({minDate:'#F{$dp.$D(\'orderT_0\')}'})"/>
-                </li>
-                <li>
-                    <span class="lab">支付时间</span>
-                    <input type="text" class="inp Wdate" id="payT_0" placeholder="开始时间" onclick="WdatePicker({maxDate:'#F{$dp.$D(\'payT_1\')}'})"/>
-                    <span class="lab">至</span>
-                    <input type="text" class="inp Wdate" id="payT_1" placeholder="结束时间" onclick="WdatePicker({minDate:'#F{$dp.$D(\'payT_0\')}'})"/>
-                </li>
-                <li class="flex1">
-                    <span class="lab">订单状态</span>
-                    <span class="inline">
-                        <label><input type="checkbox" name="o_status" value="不限">不限</label>
-                        <label><input type="checkbox" name="o_status">未支付</label>
-                        <label><input type="checkbox" name="o_status">已取消</label>
-                        <label><input type="checkbox" name="o_status">已支付待上传</label>
-                        <label><input type="checkbox" name="o_status">已支付已上传</label>
-                        <label><input type="checkbox" name="o_status">制作中</label>
-                        <label><input type="checkbox" name="o_status">已发货</label>
-                        <label><input type="checkbox" name="o_status">已揽收</label>
-                        <label><input type="checkbox" name="o_status">配送中</label>
-                        <label><input type="checkbox" name="o_status">已签收</label>
-                        <label><input type="checkbox" name="o_status">已分配待设计</label>
-                        <label><input type="checkbox" name="o_status">设计中</label>
-                        <label><input type="checkbox" name="o_status">设计完成</label>
-                    </span>
-                </li>
-                <li>
-                    <span class="lab">支付方式</span>
-                    <select class="inp">
-                        <option value="">不限</option>
-                    </select>
-                </li>
-                <li>
-                    <a href="" class="btn">开始查询</a>
-                </li>
-            </ul>
+            <div class="filter filter3">
+                <div class="d1">
+                    <p><b>创建一级目录</b></p>
+                    <p>筛选条件</p>
+                </div>
+                <div class="d2">
+                    <p>
+                        <input type="text" class="inp" placeholder="此处输入目录名称">
+                        <span class="lab">排位顺序</span>
+                        <input type="text" class="inp" placeholder="" value="1">
+                    </p>
+                    <p>
+                        <input type="text" class="inp" placeholder="此处输入筛选条件名称">
+                        <span class="lab">筛选明细</span>
+                        <input type="text" class="inp" placeholder="此处输入筛选明细">
+                        <a href="" class="btn">添加</a>
+                    </p>
+                    <p>
+                        <input type="text" class="inp" placeholder="此处输入筛选条件名称">
+                        <span class="lab">筛选明细</span>
+                        <input type="text" class="inp" placeholder="此处输入筛选明细">
+                        <a href="" class="btn">添加</a>
+                    </p>
+                    <p>
+                        <input type="text" class="inp" placeholder="此处输入筛选条件名称">
+                        <span class="lab">筛选明细</span>
+                        <input type="text" class="inp" placeholder="此处输入筛选明细">
+                        <a href="" class="btn">添加</a>
+                    </p>
+                    <p>
+                        <a href="" class="blue">添加更多筛选条件 ></a>
+                    </p>
+                    <p>
+                        <a href="" class="btn">确认创建</a><br>
+                    </p>
+                    <div class="orange">创建相册套系成功，可继续创建其他一级目录！</div>
+                </div>
+            </div>
             <!-- 结果 -->
-            <div class="result">
-                <table class="tab tab2">
-                    <caption>查询订单列表</caption>
+            <div class="result result2">
+                <h2>已创建一级目录</h2>
+                <table class="tab">
                     <tr>
-                        <th>订单号</th>
-                        <th>下单时间</th>
-                        <th>支付时间</th>
-                        <th>产品名称</th>
-                        <th>订单状态</th>
-                        <th>支付方式</th>
-                        <th>订单金额</th>
-                        <th>配送地区</th>
-                        <th>订单详情</th>
+                        <th>相册套系</th>
+                        <td><a href="" class="blue">修改 ></a></td>
                     </tr>
                     <tr>
-                        <td>12345678</td>
-                        <td>2018-03-12 14:20</td>
-                        <td>2018-03-12 14:20</td>
-                        <td>简爱套系 3件套 灰色</td>
-                        <td>已发货</td>
-                        <td>微信</td>
-                        <td>56.00</td>
-                        <td>北京-北京</td>
-                        <td><a href="" class="blue">查看订单</a></td>
+                        <th>排位顺序</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>价格类型</th>
+                        <td>高端,中端,低端,亲民</td>
+                    </tr>
+                    <tr>
+                        <th>封面材质</th>
+                        <td>皮质封面,实木封面,布艺封面,吸塑封面</td>
+                    </tr>
+                    <tr>
+                        <th>主题</th>
+                        <td>婚纱,儿童,写真,不限</td>
+                    </tr>
+                    <tr>
+                        <th>件数</th>
+                        <td>3件套,4件套,5件套,6件套</td>
+                    </tr>
+                    <tr>
+                        <th>相册尺寸</th>
+                        <td>8寸,10寸,12寸,16寸</td>
+                    </tr>
+                    <tr>
+                        <th>相框尺寸</th>
+                        <td>12寸,16寸,18寸,24寸</td>
+                    </tr>
+                    <tr>
+                        <th>套系包含</th>
+                        <td>相册,相册+摆台,相册+相框,相册+相框+摆台</td>
                     </tr>
                 </table>
             </div>

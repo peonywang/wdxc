@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4已有产品修改</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="/css/com.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--时间插件-->
+</head>
+<body>
+<!-- 头部 -->
+<div id="header"></div>
+<!-- 主内容 -->
+<div id="main">
+    <!-- 菜单栏 -->
+    <div id="menu"></div>
+    <!-- 内容 -->
+    <div id="content">
+        <h1>已有产品修改</h1>
+        <!-- 展示区 -->
+        <div class="content">
+            <!-- 筛选 -->
+            <ul class="filter filter2">
+                <li>
+                    <b class="lab">选择一级目录</b>
+                    <select class="inp">
+                        <option value="相册套系">相册套系</option>
+                    </select>
+                    <b class="lab">选择二级目录</b>
+                    <select class="inp">
+                        <option value="雅典娜套系">雅典娜套系</option>
+                    </select>
+                </li>
+                <li class="flex1">
+                    <span class="lab">价格类型</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="priType" value="高端">高端</label>
+                        <label><input type="checkbox" name="priType" value="">中端</label>
+                        <label><input type="checkbox" name="priType" value="">低端</label>
+                        <label><input type="checkbox" name="priType" value="">亲民</label>
+                    </span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">封面材质</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="covM" value="">皮质封面</label>
+                        <label><input type="checkbox" name="covM" value="">实木封面</label>
+                        <label><input type="checkbox" name="covM" value="">布艺封面</label>
+                        <label><input type="checkbox" name="covM" value="">吸塑封面</label>
+                    </span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">主题</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="theme" value="">婚纱</label>
+                        <label><input type="checkbox" name="theme" value="">儿童</label>
+                        <label><input type="checkbox" name="theme" value="">写真</label>
+                        <label><input type="checkbox" name="theme" value="">不限</label>
+                    </span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">件数</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="num" value="">3件套</label>
+                        <label><input type="checkbox" name="num" value="">4件套</label>
+                        <label><input type="checkbox" name="num" value="">5件套</label>
+                        <label><input type="checkbox" name="num" value="">6件套</label>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div id="footer"></div>
+<script>
+    $(function () {
+        $("#header").load('/pages/common/header.html');
+        $("#menu").load('/pages/common/menu.html',function () {
+            $("#menu a[name=existing_product]").addClass('act');
+        });
+        $("#footer").load('/pages/common/footer.html');
+
+        //筛选 不限
+        $(".filter input[name='o_status']").click(function () {
+            var _this = $(this);
+            if (_this.val() == '不限'){
+                var check = _this.prop("checked");
+                if(check){
+                    _this.parent("label").siblings("label").find("input[name='o_status']").prop('checked',false);
+                }
+            }else{
+                $(".filter label:eq(0) input[name='o_status']").prop('checked',false)
+            }
+        })
+    })
+</script>
+</body>
+</html>

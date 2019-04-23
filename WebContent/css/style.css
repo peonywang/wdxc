@@ -160,6 +160,20 @@ input[type='checkbox']{
 .inline{
     display: inline-block;
 }
+.filter3{
+    align-items: flex-start;
+    line-height: 32px;
+}
+.filter3 .d1{
+    text-align: right;
+    margin-right: 1em;
+}
+.filter3 p + p{
+    margin-top: 1em;
+}
+.filter3 .d2 p{
+    display: flex;
+}
 /* 结果 */
 .result{}
 .result .tab{
