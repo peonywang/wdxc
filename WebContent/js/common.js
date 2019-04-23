@@ -5,6 +5,7 @@
  * @param callBack
  */
 function getDataFromServiceAsync(ajaxUrl,type,data,callBack) {
+	
     $.ajax({
         type: type,
         dataType: "json",
