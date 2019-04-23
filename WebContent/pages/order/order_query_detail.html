@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1订单简单查询</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="/css/com.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- 头部 -->
+<div id="header">
+    <!--<div class="logo">影楼采购网ERP管理系统</div>-->
+    <!--<a href="" class="quit">退出登录</a>-->
+</div>
+<!-- 主内容 -->
+<div id="main">
+    <!-- 菜单栏 -->
+    <div id="menu">
+        
+    </div>
+    <!-- 内容 -->
+    <div id="content">
+        <h1>订单简单查询</h1>
+        <!-- 展示区 -->
+        <div class="content">
+            <!-- 筛选 -->
+            <div class="filter">
+                <span class="lab">订单号</span>
+                <input type="text" class="inp">
+                <a href="" class="btn">查询</a>
+            </div>
+            <!-- 结果 -->
+            <div class="result">
+                <table class="tab tab1">
+                    <caption>订单信息</caption>
+                    <tr>
+                        <th>订单号</th>
+                        <td>6630955</td>
+                        <th>下单时间</th>
+                        <td>2019-04-04  14:47:11</td>
+                        <th>订单状态</th>
+                        <td><b class="green">制作中</b></td>
+                    </tr>
+                    <tr>
+                        <th>产品金额</th>
+                        <td>59.00</td>
+                        <th>配送金额</th>
+                        <td>10.00</td>
+                        <th>订单金额</th>
+                        <td>69.00</td>
+                    </tr>
+                    <tr>
+                        <th>预存支付</th>
+                        <td>20.00</td>
+                        <th>在线支付</th>
+                        <td>微信支付 49.00</td>
+                        <th>交易号</th>
+                        <td>4200000273201904041007730350</td>
+                    </tr>
+                    <tr>
+                        <th>支付时间</th>
+                        <td>2019-04-04  14:49:00</td>
+                        <th>用户ID</th>
+                        <td>4470366</td>
+                        <th>用户等级</th>
+                        <td>一星会员</td>
+                    </tr>
+                    <tr>
+                        <th>上级ID</th>
+                        <td>4471378</td>
+                        <th>上级名称</th>
+                        <td>盈彩影楼</td>
+                        <th></th>
+                        <td></td>
+                    </tr>
+                </table>
+                <table class="tab tab3">
+                    <caption>产品信息</caption>
+                    <tr>
+                        <th>产品名称</th>
+                        <th>数量</th>
+                        <th>金额</th>
+                        <th>文件</th>
+                        <th>用户备注说明</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="img" src="/images/pro.png" alt="简爱套系 3件套 灰色 银盐冲印">
+                            简爱套系 3件套 灰色 银盐冲印
+                        </td>
+                        <td>1</td>
+                        <td>9.90</td>
+                        <td>
+                            <a href="" class="btn btn_y"><b>下载文件</b></a>
+                        </td>
+                        <td>对颜色要求比较高，有问题请电话联系一下</td>
+                    </tr>
+                </table>
+                <table class="tab tab2">
+                    <caption>用户配送信息</caption>
+                    <tr>
+                        <th>收货人</th>
+                        <th>联系电话</th>
+                        <th>收货地址</th>
+                        <th>分配车间</th>
+                    </tr>
+                    <tr>
+                        <td>刘博文</td>
+                        <td>12345678901</td>
+                        <td>北京-北京市 海淀区 学院南路68号吉安大厦C座</td>
+                        <td>北京盈彩</td>
+                    </tr>
+                </table>
+                <table class="tab tab2">
+                    <caption>物流信息</caption>
+                    <tr>
+                        <th>发货时间</th>
+                        <th>快递公司</th>
+                        <th>配送单号</th>
+                        <th>配送状态</th>
+                    </tr>
+                    <tr>
+                        <td>2019-04-04 15:19</td>
+                        <td>韵达快递</td>
+                        <td>-</td>
+                        <td>已发货</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div id="footer">
+    <!--<span class="s1">京ICP备14002234号 京ICP证060202号</span>-->
+    <!--<span class="s1">北京市公安局海淀分局备案编号：1101081972</span>-->
+</div>
+<script>
+    $(function () {
+        $("#header").load('/pages/common/header.html');
+        $("#menu").load('/pages/common/menu.html',function () {
+            $("#menu a[name=order_query_detail]").addClass('act');
+        });
+        $("#footer").load('/pages/common/footer.html');
+    })
+</script>
+</body>
+</html>

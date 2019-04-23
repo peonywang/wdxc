@@ -1,0 +1,204 @@
+@charset "UTF-8";
+.inp{border:1px solid #cfcfcf;height: 30px;line-height: 30px;margin-right: 3em;padding: 0 5px;min-width: 170px;}
+.btn{
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    border-radius: 3px;
+    background:#2672d1;
+    color:#FFF;
+    text-align: center;
+    padding: 0 2.5em;
+    letter-spacing: 2px;
+}
+.btn_y{background: #ff8a00;}
+#header{
+    background:#093368;
+    color:#FFF;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #d5d5d5;
+}
+#header .logo{
+    font-size: 28px;
+}
+#header a{
+    color: #FFF;
+}
+#footer{
+    background: #f6f6f6;
+    color:#767676;
+    text-align: center;
+    border-top: 3px solid #6494d5;
+    margin-top: 13px;
+    padding: 38px 0;
+    font-size: 12px;
+}
+#footer .s1{
+    display: inline-block;
+}
+#footer .s1 + .s1{
+    margin-left: 2em;
+}
+/* 主内容 */
+#main{
+    display:flex;
+    background: #FFF;
+}
+/* menu */
+#menu{
+    width: 190px;
+    border-right: 1px solid #e1e1e1;
+    box-sizing: border-box;
+    padding: 20px 14px 45px;
+}
+#menu .tit{
+    font-size: 16px;
+    background: #2672d1;
+    color:#FFF;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 14px;
+    height: 32px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+#menu .tit:after {
+    content: '';
+    width:13px;
+    height: 6px;
+    background: url("../images/jiantou.svg") no-repeat;
+    display: block;
+}
+#menu .list {
+    font-size: 13px;
+    padding: 7px;
+}
+#menu .list a{
+    display: block;
+    padding: 7px 0;
+}
+#menu .list a:before{
+    font-family: 'font_family';
+    content: '\e609';
+    margin-right: 4px;
+    color: #909090;
+    font-size: 13px;
+    transform: scale(0.7,0.7);
+    display: inline-block;
+}
+#menu .list a.act,
+#menu .list a:hover,
+#menu .list a.act:before,
+#menu .list a:hover:before{
+    color:#f54c4c;
+}
+
+/* 内容 */
+#content{
+    flex: 1;
+}
+#content h1{
+    color: #191919;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 3;
+    border-bottom: 1px solid #e1e1e1;
+    padding-left: 30px;
+}
+/* 展示区 */
+.content{
+    padding: 0 20px 20px;
+}
+/* 筛选 */
+.filter{
+    border-bottom: 3px solid #2672d1;
+    padding: 18px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.filter .lab{
+    margin-right: 1em;
+    min-width: 4em;
+    display: inline-block;
+}
+
+.filter2{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.filter .flex1{
+    align-items: baseline;
+}
+.filter .flex1 .inline{
+    line-height: 2;
+}
+.filter2 li{
+    display: flex;
+    align-items: center;
+}
+.filter2 li + li{
+    margin-top: 1em;
+}
+.filter label{
+    margin-right: 1em;
+    display: inline-block;
+    color: #010101;
+}
+input[type='checkbox']{
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 15px;
+    height: 15px;
+}
+.inline{
+    display: inline-block;
+}
+/* 结果 */
+.result{}
+.result .tab{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px auto;
+}
+.result .tab caption{
+    background: #cfe1f7;
+    text-align: left;
+    color: #191919;
+    line-height: 32px;
+    padding-left: 10px;
+}
+.tab th,
+.tab td{
+    white-space: nowrap;
+    text-align: center;
+    line-height: 35px;
+    padding: 0 1em;
+    font-size: 13px;
+}
+.tab tr {
+    border-bottom:1px solid #e6e7e8;
+}
+.tab th{
+    color:#444;
+    font-weight: normal;
+    background: #f4f5f9;
+}
+.tab td {
+    color: #666;
+}
+.tab .img{vertical-align: middle;}
+.tab1 th,
+.tab1 td,
+.tab3 td{
+    border:1px solid #e6e7e8;
+}
+.tab3 td{
+    padding: 1em;
+}

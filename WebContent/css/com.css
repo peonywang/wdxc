@@ -1,0 +1,249 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "PingFang SC", "微软雅黑";
+  background: #edeff0;
+  color: #5c5b5b;
+}
+li {
+  list-style: none;
+}
+a img {
+  border: none;
+}
+input[type="button"] {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #525252;
+}
+a:focus {
+  outline: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+a,
+input,
+button {
+  outline: none;
+}
+/* icon */
+@font-face {
+  font-family: 'font_family';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff2') format('woff2'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#font_family') format('svg');
+}
+.an {
+  cursor: pointer;
+  display: inline-block;
+  background: #171717;
+  color: #FFF;
+  padding: 0 3.5em;
+  text-align: center;
+  line-height: 36px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+.an + .an {
+  margin-left: 30px;
+}
+.an2 {
+  color: #ffdd8a;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+}
+.boxK {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.w {
+  margin: 0 auto;
+  width: 1400px;
+  padding: 0 20px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.cent {
+  text-align: center;
+}
+.bgcol {
+  background: #171717;
+}
+.textback {
+  color: #171717;
+}
+.textgray {
+  color: #8f909b;
+}
+.gray {
+  color: #8f909b;
+}
+.red,a.red {
+  color: #f54c4c;
+}
+.yellow {
+  color: #ffdd8a;
+}
+.green {
+  color: #00a903;
+}
+.black {
+  color: #171717;
+}
+.blue{
+  color: #3e7bcc;
+}
+a.blue{
+  color: #3e7bcc;
+  text-decoration: underline;
+}
+.font13 {
+  font-size: 13px;
+}
+.font15 {
+  font-size: 15px;
+}
+.font30 {
+  font-size: 30px;
+}
+.img100 {
+  width: 100%;
+}
+.check {
+  cursor: pointer;
+}
+.check input[type="checkbox"],
+.check input[type="radio"] {
+  width: 0;
+  visibility: hidden;
+}
+.check span {
+  padding-left: 30px;
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+}
+.check input[type="checkbox"] + span {
+  /*background: url(../images/check.png) no-repeat left top;*/
+}
+.check input[type="radio"] + span {
+  /*background: url(../images/radio.png) no-repeat left top;*/
+}
+.check input:checked + span {
+  background-position: left bottom;
+}
+.tan {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  background: rgba(0, 0, 0, 0.6);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.tan .tan_main {
+  background: #FFF;
+  min-width: 680px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 60px 50px 90px;
+}
+.tan .tan_tit {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.tan .tan_nr {
+  font-size: 13px;
+  color: #8f909b;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+.tan .anD {
+  margin-bottom: 20px;
+}
+.tan .a1 {
+  color: #171717;
+  font-size: 15px;
+}
+.tan .marg + .marg {
+  margin-left: 3em;
+}
+.tan .erwei {
+  height: 60px;
+  vertical-align: middle;
+  margin: 0 30px 30px 10px;
+  cursor: pointer;
+}
+.tan .erwei + .erwei {
+  margin-left: 60px;
+}
+.tan .dis {
+  font-size: 13px;
+  color: #8f909b;
+  line-height: 2;
+}
+.tan .font15 {
+  font-size: 15px;
+}
+.tan .tan_main{position: relative;}
+.tan .close{
+  content: "";
+  position: absolute;
+  /*background: url('../images/close2.png') no-repeat;*/
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  right: -60px;
+  top: -60px;
+  cursor: pointer;
+  opacity: .5;
+  z-index: -1;
+}
+.tan:after{
+  content: "";
+  position: absolute;
+  /*background: url('../images/close2.png') no-repeat;*/
+  width: 40px;
+  height: 40px;
+  background-size: 100%;
+  right: 80px;
+  top: 80px;
+  cursor: pointer;
+}

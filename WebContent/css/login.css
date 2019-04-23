@@ -1,0 +1,146 @@
+/*=== Reset ===*/
+html, body {
+	font-family: sans-serif;
+}
+html{
+	height: 100%;
+	background: transparent;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,header,nav,section,footer {
+  padding: 0;
+  margin: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+img {
+  border: 0;
+  display:block;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+  font-size: 100%;
+}
+a {
+  text-decoration:none;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+input, button, select, textarea{
+  outline:none;
+}
+a:hover{
+	text-decoration: none!important;
+}
+button{
+	border:0 none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	display: block;
+	
+}
+.clear:after{
+	display: block;
+	clear: both;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: ".";
+    text-overflow: ellipsis;
+    white-space: nowrap;	
+}
+.pa{
+	position: absolute;
+}
+.pr{
+		position:relative;
+}
+.pf{
+	position:fixed;
+}
+span,i,input{
+	display: inline-block;
+}
+.box{
+	padding-left: 1rem;
+	padding-right: 1rem;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+html,body,.bg{
+	width: 100%;
+	height: 100%;	
+}
+.bg{
+	background: url(/images/login/bg01.jpg) no-repeat center center;
+	background-size: cover;
+}
+.login-box{
+	width: 386px;
+	height: 328px;
+	position: absolute;	
+	top:50%;
+	right:11%;
+	margin-top:-164px;
+	background: #ebedf2;
+	padding: 28px 35px 40px;
+}
+
+.login-title{
+	color: #000000;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.login-item{
+	width: 316px;
+	height: 55px;
+	border:1px solid #d3d3d3;
+}
+.login-item i{
+	width: 55px;
+	height: 55px;
+	display: inline-block;
+}
+.login-item .icon-account{
+	background: url(/images/login/account.png) no-repeat center;
+	background-size: 40%;
+}
+.login-item .icon-password{
+	background: url(/images/login/password.png) no-repeat center;
+	background-size: 40%;
+}
+.login-item input{
+	width: 260px;
+	background: #ebedf2;
+	font-size:14px;
+	line-height: 55px;
+	color: #959595;
+	border:0 none;
+}
+.protol{
+	color: #959595;
+	margin-top:20px;
+}
+.protol input{
+	width:13px;
+	height:13px;
+}
+.login-btn{
+	width: 316px;
+	height: 40px;
+	line-height: 40px;
+	background: #2672d1;
+	color: #fff;
+	text-align: center;
+	font-size:24px;
+	border-radius: 2px;
+	margin-top:20px;
+}

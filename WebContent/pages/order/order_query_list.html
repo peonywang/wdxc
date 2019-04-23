@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2订单高级查询</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="/css/com.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- 头部 -->
+<div id="header"></div>
+<!-- 主内容 -->
+<div id="main">
+    <!-- 菜单栏 -->
+    <div id="menu"></div>
+    <!-- 内容 -->
+    <div id="content">
+        <h1>订单高级查询</h1>
+        <!-- 展示区 -->
+        <div class="content">
+            <!-- 筛选 -->
+            <ul class="filter filter2">
+                <li>
+                    <span class="lab">用户ID</span>
+                    <input type="text" class="inp">
+                    <span class="lab">手机号</span>
+                    <input type="text" class="inp">
+                </li>
+                <li>
+                    <span class="lab">下单时间</span>
+                    <input type="text" class="inp" placeholder="开始时间">
+                    <span class="lab">至</span>
+                    <input type="text" class="inp" placeholder="结束时间">
+                </li>
+                <li>
+                    <span class="lab">支付时间</span>
+                    <input type="text" class="inp" placeholder="开始时间">
+                    <span class="lab">至</span>
+                    <input type="text" class="inp" placeholder="结束时间">
+                </li>
+                <li class="flex1">
+                    <span class="lab">订单状态</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="o_status" value="不限">不限</label>
+                        <label><input type="checkbox" name="o_status">未支付</label>
+                        <label><input type="checkbox" name="o_status">已取消</label>
+                        <label><input type="checkbox" name="o_status">已支付待上传</label>
+                        <label><input type="checkbox" name="o_status">已支付已上传</label>
+                        <label><input type="checkbox" name="o_status">制作中</label>
+                        <label><input type="checkbox" name="o_status">已发货</label>
+                        <label><input type="checkbox" name="o_status">已揽收</label>
+                        <label><input type="checkbox" name="o_status">配送中</label>
+                        <label><input type="checkbox" name="o_status">已签收</label>
+                        <label><input type="checkbox" name="o_status">已分配待设计</label>
+                        <label><input type="checkbox" name="o_status">设计中</label>
+                        <label><input type="checkbox" name="o_status">设计完成</label>
+                    </span>
+                </li>
+                <li>
+                    <span class="lab">支付方式</span>
+                    <select class="inp">
+                        <option value="">不限</option>
+                    </select>
+                </li>
+                <li>
+                    <a href="" class="btn">开始查询</a>
+                </li>
+            </ul>
+            <!-- 结果 -->
+            <div class="result">
+                <table class="tab tab2">
+                    <caption>查询订单列表</caption>
+                    <tr>
+                        <th>订单号</th>
+                        <th>下单时间</th>
+                        <th>支付时间</th>
+                        <th>产品名称</th>
+                        <th>订单状态</th>
+                        <th>支付方式</th>
+                        <th>订单金额</th>
+                        <th>配送地区</th>
+                        <th>订单详情</th>
+                    </tr>
+                    <tr>
+                        <td>12345678</td>
+                        <td>2018-03-12 14:20</td>
+                        <td>2018-03-12 14:20</td>
+                        <td>简爱套系 3件套 灰色</td>
+                        <td>已发货</td>
+                        <td>微信</td>
+                        <td>56.00</td>
+                        <td>北京-北京</td>
+                        <td><a href="" class="blue">查看订单</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div id="footer"></div>
+<script>
+    $(function () {
+        $("#header").load('/pages/common/header.html');
+        $("#menu").load('/pages/common/menu.html',function () {
+            $("#menu a[name=order_query_list]").addClass('act');
+        });
+        $("#footer").load('/pages/common/footer.html');
+
+        //筛选 不限
+        $(".filter input[name='o_status']").click(function () {
+            var _this = $(this);
+            if (_this.val() == '不限'){
+                var check = _this.prop("checked");
+                if(check){
+                    _this.parent("label").siblings("label").find("input[name='o_status']").prop('checked',false);
+                }
+            }else{
+                $(".filter label:eq(0) input[name='o_status']").prop('checked',false)
+            }
+        })
+    })
+</script>
+</body>
+</html>
