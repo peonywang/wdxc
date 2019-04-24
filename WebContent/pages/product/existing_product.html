@@ -24,7 +24,7 @@
         <!-- 展示区 -->
         <div class="content">
             <!-- 筛选 -->
-            <ul class="filter filter2">
+            <ul class="filter filter2 filter4">
                 <li>
                     <b class="lab">选择一级目录</b>
                     <select class="inp">
@@ -71,6 +71,126 @@
                         <label><input type="checkbox" name="num" value="">6件套</label>
                     </span>
                 </li>
+                <li class="flex1">
+                    <span class="lab">相册尺寸</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="album" value="">8寸</label>
+                        <label><input type="checkbox" name="album" value="">10寸</label>
+                        <label><input type="checkbox" name="album" value="">12寸</label>
+                        <label><input type="checkbox" name="album" value="">16寸</label>
+                    </span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">相框尺寸</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="frame" value="">12寸</label>
+                        <label><input type="checkbox" name="frame" value="">16寸</label>
+                        <label><input type="checkbox" name="frame" value="">18寸</label>
+                        <label><input type="checkbox" name="frame" value="">24寸</label>
+                    </span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">套系包含</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="set" value="">相册</label>
+                        <label><input type="checkbox" name="set" value="">相册、摆台</label>
+                        <label><input type="checkbox" name="set" value="">相册、相框</label>
+                        <label><input type="checkbox" name="set" value="">相册、相框、摆台</label>
+                    </span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">排位顺序</span>
+                    <input type="text" class="inp" value="1">
+                </li>
+                <li class="flex1">
+                    <span class="lab">上传产品大图</span>
+                    <a href="" class="btn_blue">上传图片</a>
+                    <span class="blue">800*800像素，可选择多张上传</span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">上传购物车小图</span>
+                    <a href="" class="btn_blue">上传图片</a>
+                    <span class="blue">400*400像素</span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">购买级别</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="purchase" value="">一星以上</label>
+                        <label><input type="checkbox" name="purchase" value="">二星以上</label>
+                        <label><input type="checkbox" name="purchase" value="">三星以上</label>
+                        <label><input type="checkbox" name="purchase" value="">四星以上</label>
+                        <label><input type="checkbox" name="purchase" value="">仅限五星</label>
+                        <label><input type="checkbox" name="purchase" value="">不限</label>
+                    </span>
+                </li>
+                <li class="flex1">
+                    <span class="lab">推荐购买</span>
+                    <span class="inline">
+                        <label><input type="checkbox" name="recommended" value="">推荐</label>
+                    </span>
+                </li>
+                <li class="flex1 flex2">
+                    <span class="lab">创建子目录</span>
+                    <ul class="inline">
+                        <li>
+                            <input type="text" class="inp inp_small" value="颜色">
+                            <div class="d1">
+                                <span class="lab">子目录明细</span>
+                                <p class="p1">
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="白色">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="灰色">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="黄色">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="蓝色">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="棕色">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <a href="javascript:;" class="btn add">添加</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="text" class="inp inp_small" value="工艺">
+                            <div class="d1">
+                                <span class="lab">子目录明细</span>
+                                <p class="p1">
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="INDIGO印刷">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="银盐冲印">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <label for="">
+                                        <input type="text" class="inp inp_small" value="艺术微喷">
+                                        <img src="/images/del.png" alt="删除" class="del">
+                                    </label>
+                                    <a href="javascript:;" class="btn add">添加</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="blue">添加更多子目录 ></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex1">
+                    <span class="lab">产品描述说明</span>
+                    <textarea class="inp" name="" id="" cols="30" rows="10"></textarea>
+                </li>
             </ul>
         </div>
     </div>
@@ -85,17 +205,20 @@
         });
         $("#footer").load('/pages/common/footer.html');
 
-        //筛选 不限
-        $(".filter input[name='o_status']").click(function () {
+        //删除
+
+        $(".flex2").delegate('.del','click',function () {
+            $(this).parents('label').remove();
+        })
+        //添加
+        $(".flex2 .add").click(function () {
             var _this = $(this);
-            if (_this.val() == '不限'){
-                var check = _this.prop("checked");
-                if(check){
-                    _this.parent("label").siblings("label").find("input[name='o_status']").prop('checked',false);
-                }
-            }else{
-                $(".filter label:eq(0) input[name='o_status']").prop('checked',false)
-            }
+            var addObj =
+                '<label for="">\n' +
+                '    <input type="text" class="inp inp_small" value="" placeholder="描述">\n' +
+                '    <img src="/images/del.png" alt="删除" class="del">\n' +
+                '</label>';
+            _this.before(addObj)
         })
     })
 </script>

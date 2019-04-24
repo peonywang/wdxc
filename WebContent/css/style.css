@@ -1,5 +1,10 @@
 @charset "UTF-8";
 .inp{border:1px solid #cfcfcf;height: 30px;line-height: 30px;margin-right: 3em;padding: 0 5px;min-width: 170px;}
+.inp_small{
+    width: 80px;
+    min-width: unset;
+    margin-right: 1em;
+}
 .btn{
     height: 32px;
     line-height: 32px;
@@ -12,6 +17,16 @@
     letter-spacing: 2px;
 }
 .btn_y{background: #ff8a00;}
+.btn_blue{
+    border:1px solid #2672d1;
+    color: #2672d1;
+    border-radius: 3px;
+    background: linear-gradient(#FFF,#b4d5fe);
+    display: block;
+    line-height: 2;
+    padding: 0 1em;
+    margin-right: 1em;
+}
 #header{
     background:#093368;
     color:#FFF;
@@ -139,6 +154,28 @@
 .filter .flex1 .inline{
     line-height: 2;
 }
+.filter .flex2{
+}
+.filter .flex2 li{
+    display: flex;
+    align-items: flex-start;
+}
+.filter .flex2 label{
+    position: relative;
+    margin-right: 0;
+    margin-bottom: .5em;
+}
+.filter .flex2 .del{
+    position: absolute;
+    right: 14px;
+    bottom: 0;
+}
+.filter .flex2 .btn{
+    padding: 0 .8em;
+}
+.filter .flex2 .d1{
+    display: flex;
+}
 .filter2 li{
     display: flex;
     align-items: center;
@@ -173,6 +210,11 @@ input[type='checkbox']{
 }
 .filter3 .d2 p{
     display: flex;
+}
+.filter4 .lab{
+    text-align: right;
+    width: 7em;
+    flex-shrink: 0;
 }
 /* 结果 */
 .result{}

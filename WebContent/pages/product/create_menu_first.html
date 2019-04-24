@@ -117,18 +117,6 @@
         });
         $("#footer").load('/pages/common/footer.html');
 
-        //筛选 不限
-        $(".filter input[name='o_status']").click(function () {
-            var _this = $(this);
-            if (_this.val() == '不限'){
-                var check = _this.prop("checked");
-                if(check){
-                    _this.parent("label").siblings("label").find("input[name='o_status']").prop('checked',false);
-                }
-            }else{
-                $(".filter label:eq(0) input[name='o_status']").prop('checked',false)
-            }
-        })
     })
 </script>
 </body>
