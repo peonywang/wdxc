@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>5创建生产车间</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="/css/com.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<!-- 头部 -->
+<div id="header"></div>
+<!-- 主内容 -->
+<div id="main">
+    <!-- 菜单栏 -->
+    <div id="menu"></div>
+    <!-- 内容 -->
+    <div id="content">
+        <h1>创建生产车间</h1>
+        <!-- 展示区 -->
+        <div class="content">
+            <div class="filter filter3" id="create">
+                <div class="d2">
+                    <p><b>设置车间信息</b></p>
+                    <p>
+                        <span class="lab">ID号码</span>
+                        <input type="text" class="inp" placeholder="输入ID号码">
+                        <span class="lab">姓名</span>
+                        <input type="text" class="inp" placeholder="输入负责人姓名">
+                        <span class="lab">手机号</span>
+                        <input type="text" class="inp" placeholder="输入联系手机号">
+                    </p>
+                    <p>
+                        <span class="lab">输入密码</span>
+                        <input type="text" class="inp" placeholder="">
+                        <span class="lab">确认密码</span>
+                        <input type="text" class="inp" placeholder="">
+                    </p>
+                    <p>
+                        <span class="lab">车间名称</span>
+                        <input type="text" class="inp" placeholder="">
+                        <span class="lab">车间编号</span>
+                        <input type="text" class="inp" placeholder="">
+                    </p>
+                    <p><b>设置配送费</b></p>
+                    <p>
+                        <span class="lab">全国</span>
+                        <input type="text" class="inp inp_small">
+                        <span class="lab lab2">-</span>
+                        <input type="text" class="inp inp_small">
+                        <span class="lab lab2">配送费</span>
+                        <input type="text" class="inp inp_small">
+                    </p>
+                    <p>
+                        <span class="lab"></span>
+                        <input type="text" class="inp inp_small">
+                        <span class="lab lab2">-</span>
+                        <input type="text" class="inp inp_small">
+                        <span class="lab lab2">配送费</span>
+                        <input type="text" class="inp inp_small">
+                        <span class="blue del">[删除]</span>
+                    </p>
+                    <p>
+                        <span class="lab"></span>
+                        <span class="blue add">添加配送价格区间 ></span>
+                    </p>
+                    <p>
+                        <span class="lab">新疆西藏</span>
+                        <input type="text" class="inp inp_small">
+                        <span class="lab lab2">-</span>
+                        <input type="text" class="inp inp_small">
+                        <span class="lab lab2">配送费</span>
+                        <input type="text" class="inp inp_small">
+                    </p>
+                    <p>
+                        <span class="lab"></span>
+                        <span class="blue add">添加配送价格区间 ></span>
+                    </p>
+                    <p>
+                        <span class="lab"></span>
+                        <a href="" class="btn margr">确认创建</a><br>
+                        <span class="orange">创建成功</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div id="footer"></div>
+<script>
+    $(function () {
+        $("#header").load('/pages/common/header.html');
+        $("#menu").load('/pages/common/menu.html',function () {
+            $("#menu a[name=create_menu_first]").addClass('act');
+        });
+        $("#footer").load('/pages/common/footer.html');
+        // 设置配送费
+        $("#create").delegate('.del','click',function () {
+            $(this).parents("p").remove();
+        })
+        $("#create .add").click(function () {
+            var addHtml = '<p>\n' +
+                '   <span class="lab"></span>\n' +
+                '   <input type="text" class="inp inp_small" placeholder="最低">\n' +
+                '   <span class="lab lab2">-</span>\n' +
+                '   <input type="text" class="inp inp_small" placeholder="最高">\n' +
+                '   <span class="lab lab2">配送费</span>\n' +
+                '   <input type="text" class="inp inp_small" placeholder="输入配送费">\n' +
+                '   <span class="blue del">[删除]</span>\n' +
+                '</p>';
+            $(this).parents("p").before(addHtml);
+        })
+
+    })
+</script>
+</body>
+</html>

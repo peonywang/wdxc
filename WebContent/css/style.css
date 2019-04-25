@@ -5,6 +5,16 @@
     min-width: unset;
     margin-right: 1em;
 }
+.del,.add{
+    cursor: pointer;
+}
+textarea.inp2{
+    flex: 1;
+    margin-right: 0;
+    height: 7em;
+    padding: 5px;
+    line-height: 1.5;
+}
 .btn{
     height: 32px;
     line-height: 32px;
@@ -25,6 +35,9 @@
     display: block;
     line-height: 2;
     padding: 0 1em;
+    margin-right: 1em;
+}
+.margr{
     margin-right: 1em;
 }
 #header{
@@ -142,7 +155,9 @@
     min-width: 4em;
     display: inline-block;
 }
-
+.filter .lab2{
+    min-width: unset;
+}
 .filter2{
     flex-direction: column;
     justify-content: flex-start;

@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8fc6b05-7b6d-41a9-95b6-4a1f52cc8dff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/WebContent/pages/product/create_workshop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/common/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/pages/common/menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/pages/product/existing_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/pages/product/existing_product.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,53 +15,89 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.74130106">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/WebContent/pages/product/existing_product.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="196" column="45" selection-start-line="196" selection-start-column="45" selection-end-line="196" selection-end-column="45" />
-                  <folding>
-                    <element signature="n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#2;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#4;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#5;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#6;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#7;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#8;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#9;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#0;n#li#13;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#li#1;n#ul#0;n#li#13;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_menu_first.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="189">
-                  <caret line="118" selection-start-line="118" selection-end-line="118" />
-                  <folding>
-                    <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#p#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.56996936">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/WebContent/pages/product/existing_product.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="221">
+                      <caret line="195" column="47" selection-start-line="195" selection-start-column="42" selection-end-line="195" selection-end-column="47" />
+                      <folding>
+                        <element signature="n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#2;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#4;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#5;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#6;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#7;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#8;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#9;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#div#0;n#div#0;n#li#13;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#li#1;n#ul#0;n#li#13;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_workshop.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="391">
+                      <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/WebContent/pages/common/menu.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="213">
+                      <caret line="52" column="56" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="56" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_menu_first.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="458">
+                      <caret line="122" column="7" lean-forward="true" selection-end-line="122" selection-end-column="7" />
+                      <folding>
+                        <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                        <element signature="n#p#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_workshop.html">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="38">
+                      <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="64" selection-end-column="24" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebContent/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="110">
-                  <caret line="176" column="3" lean-forward="true" selection-start-line="176" selection-start-column="3" selection-end-line="176" selection-end-column="3" />
+                <state relative-caret-position="374">
+                  <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -66,6 +106,13 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>filter</find>
@@ -73,9 +120,10 @@
       <find>btn</find>
       <find>frame</find>
       <find>filter3</find>
-      <find>inp</find>
       <find>flex1</find>
       <find>num</find>
+      <find>inp</find>
+      <find>del</find>
     </findStrings>
     <replaceStrings>
       <replace>frame</replace>
@@ -92,10 +140,11 @@
         <option value="$PROJECT_DIR$/WebContent/login.html" />
         <option value="$PROJECT_DIR$/WebContent/pages/order/order_query_list.html" />
         <option value="$PROJECT_DIR$/WebContent/css/com.css" />
-        <option value="$PROJECT_DIR$/WebContent/pages/common/menu.html" />
         <option value="$PROJECT_DIR$/WebContent/pages/product/create_menu_first.html" />
-        <option value="$PROJECT_DIR$/WebContent/css/style.css" />
+        <option value="$PROJECT_DIR$/WebContent/pages/common/menu.html" />
         <option value="$PROJECT_DIR$/WebContent/pages/product/existing_product.html" />
+        <option value="$PROJECT_DIR$/WebContent/css/style.css" />
+        <option value="$PROJECT_DIR$/WebContent/pages/product/create_workshop.html" />
       </list>
     </option>
   </component>
@@ -136,12 +185,6 @@
               <item name="wdxc" type="b2602c69:ProjectViewProjectNode" />
               <item name="wdxc" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wdxc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wdxc" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -173,6 +216,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -207,18 +251,18 @@
       <updated>1556030425689</updated>
       <workItem from="1556030430671" duration="151000" />
       <workItem from="1556030641122" duration="12000" />
-      <workItem from="1556030824069" duration="11725000" />
+      <workItem from="1556030824069" duration="15146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11888000" />
+    <option name="totallyTimeSpent" value="15309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -231,7 +275,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -269,13 +313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/common/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/pages/order/order_query_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -283,10 +320,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/common/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="52" column="56" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_menu_first.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        <state relative-caret-position="458">
+          <caret line="122" column="7" lean-forward="true" selection-end-line="122" selection-end-column="7" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#p#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -296,15 +340,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="176" column="3" lean-forward="true" selection-start-line="176" selection-start-column="3" selection-end-line="176" selection-end-column="3" />
+        <state relative-caret-position="374">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/pages/product/existing_product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="196" column="45" selection-start-line="196" selection-start-column="45" selection-end-line="196" selection-end-column="45" />
+        <state relative-caret-position="221">
+          <caret line="195" column="47" selection-start-line="195" selection-start-column="42" selection-end-line="195" selection-end-column="47" />
           <folding>
             <element signature="n#li#3;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#2;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
@@ -317,7 +361,15 @@
             <element signature="n#li#9;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#li#13;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#li#1;n#ul#0;n#li#13;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_workshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
         </state>
       </provider>
     </entry>
