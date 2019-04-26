@@ -1,10 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
+    <script src="/js/jquery-3.4.0.min.js"></script>
+    <link rel="stylesheet" href="/css/com.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-
+<!-- 头部 -->
+<div id="header"></div>
+<!-- 主内容 -->
+<div id="main"></div>
+<!-- 底部 -->
+<div id="footer"></div>
+<script>
+    $(function(){
+        $("#header").load('/pages/com/header.html');
+        // $("#menu").load('/pages/common/menu.html',function () {
+        //     $("#menu a[name=create_menu_first]").addClass('act');
+        // });
+        $("#footer").load('/pages/com/footer.html');
+    });
+</script>
 </body>
 </html>
