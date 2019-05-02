@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8fc6b05-7b6d-41a9-95b6-4a1f52cc8dff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/WebContent/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/pages/com/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebContent/pages/com/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/css/iconfont.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/css/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/css/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/css/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/css/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/css/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/css/iconfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/images/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/images/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/com/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/pages/com/header.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,34 +21,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.56996936">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebContent/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="22" column="8" selection-start-line="22" selection-start-column="11" selection-end-line="24" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebContent/css/index.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/WebContent/pages/com/header.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebContent/pages/product/existing_product.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="187">
@@ -76,7 +46,7 @@
             <entry file="file://$PROJECT_DIR$/WebContent/pages/common/header.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="17">
-                  <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+                  <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -86,19 +56,10 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/WebContent/pages/com/footer.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_workshop.html">
               <provider selected="true" editor-type-id="text-editor">
@@ -111,8 +72,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/WebContent/css/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="93">
-                  <caret line="71" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+                <state relative-caret-position="1207">
+                  <caret line="71" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -172,8 +133,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="247" />
-    <option name="y" value="1" />
+    <option name="x" value="109" />
+    <option name="y" value="11" />
     <option name="width" value="930" />
     <option name="height" value="726" />
   </component>
@@ -215,13 +176,6 @@
               <item name="wdxc" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wdxc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wdxc" type="462c0819:PsiDirectoryNode" />
-              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -241,7 +195,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wdxc2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -280,18 +234,19 @@
       <updated>1556030425689</updated>
       <workItem from="1556030430671" duration="151000" />
       <workItem from="1556030641122" duration="12000" />
-      <workItem from="1556030824069" duration="18241000" />
+      <workItem from="1556030824069" duration="19395000" />
+      <workItem from="1556365577741" duration="164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18404000" />
+    <option name="totallyTimeSpent" value="19722000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="109" y="11" width="930" height="726" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2632184" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -304,7 +259,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3293919" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -367,11 +322,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/css/iconfont.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/css/iconfont.css" />
+    <entry file="file://$PROJECT_DIR$/WebContent/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/WebContent/index.html" />
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/com/footer.html" />
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/com/header.html" />
     <entry file="file://$PROJECT_DIR$/WebContent/pages/product/existing_product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -391,12 +346,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/css/style.css">
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/common/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="71" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/pages/common/footer.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/pages/product/create_workshop.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -405,41 +363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/css/index.css">
+    <entry file="file://$PROJECT_DIR$/WebContent/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/common/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/common/footer.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="11" selection-end-line="24" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/com/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/pages/com/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="1207">
+          <caret line="71" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
         </state>
       </provider>
     </entry>
