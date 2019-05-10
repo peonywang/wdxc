@@ -175,12 +175,16 @@ textarea.inp2{
     display: flex;
     align-items: flex-start;
 }
-.filter .flex2 label{
+.filter .flex2 labe,
+.filter3 .d2 p label{
     position: relative;
     margin-right: 0;
     margin-bottom: .5em;
 }
-.filter .flex2 .del{
+.filter .flex2 .del,
+.filter3 .d2 p .del,
+.filter .flex2 .delAll,
+.filter3 .d2 p .delAll{
     position: absolute;
     right: 14px;
     bottom: 0;
@@ -219,12 +223,18 @@ input[type='checkbox']{
 .filter3 .d1{
     text-align: right;
     margin-right: 1em;
+    white-space: nowrap;
 }
 .filter3 p + p{
     margin-top: 1em;
 }
 .filter3 .d2 p{
     display: flex;
+    align-items: baseline;
+}
+.filter3 .d2 p .inp{
+    margin-right: 14px;
+
 }
 .filter4 .lab{
     text-align: right;

@@ -137,23 +137,23 @@
                             <div class="d1">
                                 <span class="lab">子目录明细</span>
                                 <p class="p1">
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="白色">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="灰色">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="黄色">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="蓝色">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="棕色">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
@@ -162,19 +162,23 @@
                             </div>
                         </li>
                         <li>
-                            <input type="text" class="inp inp_small" value="工艺">
+                            <label>
+                                <input type="text" class="inp inp_small" value="工艺">
+                                <img src="/images/del.png" alt="删除" class="delAll">
+                            </label>
+
                             <div class="d1">
                                 <span class="lab">子目录明细</span>
                                 <p class="p1">
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="INDIGO印刷">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="银盐冲印">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
-                                    <label for="">
+                                    <label>
                                         <input type="text" class="inp inp_small" value="艺术微喷">
                                         <img src="/images/del.png" alt="删除" class="del">
                                     </label>
@@ -183,7 +187,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="" class="blue">添加更多子目录 ></a>
+                            <a href="javascript:;" class="blue addMore">添加更多子目录 ></a>
                         </li>
                     </ul>
                 </li>
@@ -211,20 +215,45 @@
         $("#footer").load('/pages/common/footer.html');
 
         //删除
-
+        $(".flex2").delegate('.delAll','click',function () {
+            $(this).parent('label').parent('li').remove();
+        })
         $(".flex2").delegate('.del','click',function () {
             $(this).parents('label').remove();
         })
         //添加
-        $(".flex2 .add").click(function () {
+        $(".flex2").delegate('.add','click',function () {
             var _this = $(this);
             var addObj =
-                '<label for="">\n' +
+                '<label>\n' +
                 '    <input type="text" class="inp inp_small" value="" placeholder="描述">\n' +
                 '    <img src="/images/del.png" alt="删除" class="del">\n' +
                 '</label>';
             _this.before(addObj)
         })
+        // 添加更多子目录
+        $(".flex2 .addMore").click(function () {
+            var _this = $(this);
+            var addObj =
+                '<li>' +
+                '   <label>\n' +
+                '       <input type="text" class="inp inp_small" value="" placeholder="描述">\n' +
+                '       <img src="/images/del.png" alt="删除" class="delAll">\n' +
+                '   </label>' +
+                '   <div class="d1">' +
+                '       <span class="lab">子目录明细</span>' +
+                '       <p class="p1">' +
+                '           <label>' +
+                '               <input type="text" class="inp inp_small" value="" placeholder="描述">' +
+                '               <img src="/images/del.png" alt="删除" class="del">' +
+                '           </label>' +
+                '           <a href="javascript:;" class="btn add">添加</a>' +
+                '       </p>' +
+                '   </div>' +
+                '</li>';
+            _this.parent("li").before(addObj);
+
+        });
     })
 </script>
 </body>

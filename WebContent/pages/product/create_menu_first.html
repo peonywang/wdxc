@@ -36,25 +36,35 @@
                         <input type="text" class="inp" placeholder="" value="1">
                     </p>
                     <p>
-                        <input type="text" class="inp" placeholder="此处输入筛选条件名称">
+                        <label>
+                            <input type="text" class="inp" placeholder="此处输入筛选条件名称">
+                            <img src="/images/del.png" alt="删除" class="delAll">
+                        </label>
                         <span class="lab">筛选明细</span>
-                        <input type="text" class="inp" placeholder="此处输入筛选明细">
-                        <a href="" class="btn">添加</a>
+                        <span class="s1">
+                            <label>
+                                <input type="text" class="inp" placeholder="此处输入筛选明细">
+                                <img src="/images/del.png" alt="删除" class="del">
+                            </label>
+                            <a href="javascript:;" class="btn add">添加</a>
+                        </span>
                     </p>
                     <p>
-                        <input type="text" class="inp" placeholder="此处输入筛选条件名称">
+                        <label>
+                            <input type="text" class="inp" placeholder="此处输入筛选条件名称">
+                            <img src="/images/del.png" alt="删除" class="delAll">
+                        </label>
                         <span class="lab">筛选明细</span>
-                        <input type="text" class="inp" placeholder="此处输入筛选明细">
-                        <a href="" class="btn">添加</a>
+                        <span class="s1">
+                            <label>
+                                <input type="text" class="inp" placeholder="此处输入筛选明细">
+                                <img src="/images/del.png" alt="删除" class="del">
+                            </label>
+                            <a href="javascript:;" class="btn add">添加</a>
+                        </span>
                     </p>
                     <p>
-                        <input type="text" class="inp" placeholder="此处输入筛选条件名称">
-                        <span class="lab">筛选明细</span>
-                        <input type="text" class="inp" placeholder="此处输入筛选明细">
-                        <a href="" class="btn">添加</a>
-                    </p>
-                    <p>
-                        <a href="" class="blue">添加更多筛选条件 ></a>
+                        <a href="JavaScript:;" class="blue addMore">添加更多筛选条件 ></a>
                     </p>
                     <p>
                         <a href="" class="btn">确认创建</a><br>
@@ -66,7 +76,7 @@
             <div class="result result2">
                 <h2>已创建一级目录</h2>
                 <table class="tab">
-                    <tr>
+                    <tr style="border-top: 1px solid #ddd;">
                         <th>相册套系</th>
                         <td><a href="" class="blue">修改 ></a></td>
                     </tr>
@@ -116,6 +126,42 @@
             $("#menu a[name=create_menu_first]").addClass('act');
         });
         $("#footer").load('/pages/common/footer.html');
+        // 添加
+        $(".filter3").delegate('.add','click',function () {
+            var _this = $(this);
+            var addObj =
+                '<label>\n' +
+                '   <input type="text" class="inp" placeholder="此处输入筛选明细">\n' +
+                '   <img src="/images/del.png" alt="删除" class="del">\n' +
+                '</label>';
+            _this.before(addObj);
+        });
+        $(".addMore").click(function () {
+            var _this = $(this);
+            var addObj = '<p>\n' +
+                '           <label>\n' +
+                '               <input type="text" class="inp" placeholder="此处输入筛选条件名称">\n' +
+                '               <img src="/images/del.png" alt="删除" class="delAll">\n' +
+                '           </label>\n' +
+                '           <span class="lab">筛选明细</span>\n' +
+                '           <span class="s1">\n' +
+                '               <label>\n' +
+                '                   <input type="text" class="inp" placeholder="此处输入筛选明细">\n' +
+                '                       <img src="/images/del.png" alt="删除" class="del">\n' +
+                '               </label>\n' +
+                '               <a href="javascript:;" class="btn add">添加</a>\n' +
+                '           </span>\n' +
+                '        </p>';
+            _this.parent('p').before(addObj);
+        });
+        //删除
+
+        $(".filter3").delegate('.delAll','click',function () {
+            $(this).parent('label').parent('p').remove();
+        })
+        $(".filter3").delegate('.del','click',function () {
+            $(this).parents('label').remove();
+        })
 
     })
 </script>
