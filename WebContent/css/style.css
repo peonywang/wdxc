@@ -254,6 +254,9 @@ input[type='checkbox']{
     padding-top: 1em;
     color: #333;
 }
+.filter3.filter5 .d2 p{align-items:
+center;}
+.filter3.filter5 .d2 p span.blue.del{position:unset;}
 /*缩略图*/
 .tn{
     border: 1px solid #fcfcfc;
